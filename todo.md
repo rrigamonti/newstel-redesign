@@ -87,3 +87,12 @@
 - [x] Set up routing for multiple pages
 - [x] Ensure navigation menu is always clearly visible with better contrast
 - [x] Update navigation to link to separate pages instead of anchor links
+
+
+## Latest Requirements
+- [x] Replace logo with the provided Logo.svg file
+- [x] Add video to homepage (https://newstel.com/wp-content/uploads/2024/10/Newstel.mp4)
+- [x] Match homepage content exactly with original newstel.com homepage
+- [x] Download client logos from original website
+- [x] Add client logos section to homepage
+- [x] Get testimonials from original website if available
