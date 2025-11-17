@@ -27,13 +27,23 @@ export default function Navigation() {
   ];
 
   return (
-    <nav className="fixed top-0 left-0 right-0 z-50 bg-white shadow-md">
+    <nav className={`fixed top-0 left-0 right-0 z-50 bg-white transition-all duration-300 ${
+      isScrolled ? 'shadow-lg' : 'shadow-md'
+    }`}>
       <div className="container">
-        <div className="flex items-center justify-between h-20">
+        <div className={`flex items-center justify-between transition-all duration-300 ${
+          isScrolled ? 'h-16' : 'h-20'
+        }`}>
           {/* Logo */}
           <Link href="/">
             <a className="flex items-center space-x-2">
-              <img src={APP_LOGO} alt="Newstel Worldwide" className="h-14 w-auto" />
+              <img 
+                src={APP_LOGO} 
+                alt="Newstel Worldwide" 
+                className={`w-auto transition-all duration-300 ${
+                  isScrolled ? 'h-10' : 'h-14'
+                }`}
+              />
             </a>
           </Link>
 
