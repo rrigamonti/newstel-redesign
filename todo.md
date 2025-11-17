@@ -116,3 +116,7 @@
 - [x] Add 5-star rating display
 - [x] Implement auto-rotating carousel with navigation controls
 - [x] Add testimonials section to homepage
+
+
+## Bug Fixes
+- [x] Fix broken testimonial logo paths

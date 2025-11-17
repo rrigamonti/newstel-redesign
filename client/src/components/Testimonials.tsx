@@ -18,7 +18,7 @@ const testimonials: Testimonial[] = [
     author: "Sarah Mitchell",
     position: "Head of Customer Experience",
     company: "Urban Outfitters",
-    logo: "/client-urbanoutfitters.webp",
+    logo: "/clients/client-urbanoutfitters.webp",
     rating: 5,
   },
   {
@@ -27,7 +27,7 @@ const testimonials: Testimonial[] = [
     author: "James Chen",
     position: "Operations Director",
     company: "Bloom & Wild",
-    logo: "/client-bloomandwild.webp",
+    logo: "/clients/client-bloomandwild.webp",
     rating: 5,
   },
   {
@@ -36,7 +36,7 @@ const testimonials: Testimonial[] = [
     author: "Emma Thompson",
     position: "Customer Success Manager",
     company: "OnBuy",
-    logo: "/client-onbuy.webp",
+    logo: "/clients/client-onbuy.webp",
     rating: 5,
   },
   {
@@ -45,7 +45,7 @@ const testimonials: Testimonial[] = [
     author: "Michael Rodriguez",
     position: "VP of Operations",
     company: "NordicTrack",
-    logo: "/client-nordictrack.webp",
+    logo: "/clients/client-nordictrack.webp",
     rating: 5,
   },
 ];
