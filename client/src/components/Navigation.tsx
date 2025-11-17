@@ -33,7 +33,7 @@ export default function Navigation() {
           {/* Logo */}
           <Link href="/">
             <a className="flex items-center space-x-2">
-              <img src={APP_LOGO} alt="Newstel" className="h-10 w-auto" />
+              <img src={APP_LOGO} alt="Newstel Worldwide" className="h-14 w-auto" />
             </a>
           </Link>
 

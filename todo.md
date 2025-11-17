@@ -96,3 +96,8 @@
 - [x] Download client logos from original website
 - [x] Add client logos section to homepage
 - [x] Get testimonials from original website if available
+
+
+## Logo Update
+- [x] Download complete logo SVG with "Newstel Worldwide" text from original site
+- [x] Replace current logo with full version including text
