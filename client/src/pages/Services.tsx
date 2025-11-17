@@ -1,14 +1,14 @@
 import Navigation from '@/components/Navigation';
-import Hero from '@/components/Hero';
-import Features from '@/components/Features';
+import Services from '@/components/Services';
 import Footer from '@/components/Footer';
 
-export default function Home() {
+export default function ServicesPage() {
   return (
     <div className="min-h-screen">
       <Navigation />
-      <Hero />
-      <Features />
+      <div className="pt-20">
+        <Services />
+      </div>
       <Footer />
     </div>
   );

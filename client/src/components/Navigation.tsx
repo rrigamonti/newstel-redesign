@@ -2,10 +2,12 @@ import { useState, useEffect } from 'react';
 import { Button } from '@/components/ui/button';
 import { Menu, X, Phone, Globe } from 'lucide-react';
 import { APP_LOGO } from '@/const';
+import { Link, useLocation } from 'wouter';
 
 export default function Navigation() {
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+  const [location] = useLocation();
 
   useEffect(() => {
     const handleScroll = () => {
@@ -16,38 +18,39 @@ export default function Navigation() {
   }, []);
 
   const navLinks = [
-    { label: 'Why Choose Us?', href: '#why-choose' },
-    { label: 'Our Services', href: '#services' },
-    { label: 'Technology', href: '#technology' },
-    { label: 'About Us', href: '#about' },
-    { label: 'Case Studies', href: '#case-studies' },
-    { label: 'Insights', href: '#insights' },
-    { label: 'Contact', href: '#contact' },
+    { label: 'Home', href: '/' },
+    { label: 'Our Services', href: '/services' },
+    { label: 'Technology', href: '/technology' },
+    { label: 'About Us', href: '/about' },
+    { label: 'Careers', href: '/careers' },
+    { label: 'Contact', href: '/contact' },
   ];
 
   return (
-    <nav
-      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
-        isScrolled ? 'bg-white/95 backdrop-blur-md shadow-lg' : 'bg-transparent'
-      }`}
-    >
+    <nav className="fixed top-0 left-0 right-0 z-50 bg-white shadow-md">
       <div className="container">
         <div className="flex items-center justify-between h-20">
           {/* Logo */}
-          <a href="#" className="flex items-center space-x-2">
-            <img src={APP_LOGO} alt="Newstel" className="h-10 w-auto" />
-          </a>
+          <Link href="/">
+            <a className="flex items-center space-x-2">
+              <img src={APP_LOGO} alt="Newstel" className="h-10 w-auto" />
+            </a>
+          </Link>
 
           {/* Desktop Navigation */}
           <div className="hidden lg:flex items-center space-x-8">
             {navLinks.map((link) => (
-              <a
-                key={link.href}
-                href={link.href}
-                className="text-sm font-medium text-foreground hover:text-accent transition-colors"
-              >
-                {link.label}
-              </a>
+              <Link key={link.href} href={link.href}>
+                <a
+                  className={`text-sm font-medium transition-colors ${
+                    location === link.href
+                      ? 'text-accent'
+                      : 'text-foreground hover:text-accent'
+                  }`}
+                >
+                  {link.label}
+                </a>
+              </Link>
             ))}
           </div>
 
@@ -81,14 +84,18 @@ export default function Navigation() {
           <div className="lg:hidden py-4 border-t border-border bg-white">
             <div className="flex flex-col space-y-4">
               {navLinks.map((link) => (
-                <a
-                  key={link.href}
-                  href={link.href}
-                  onClick={() => setIsMobileMenuOpen(false)}
-                  className="text-sm font-medium text-foreground hover:text-accent transition-colors px-4 py-2"
-                >
-                  {link.label}
-                </a>
+                <Link key={link.href} href={link.href}>
+                  <a
+                    onClick={() => setIsMobileMenuOpen(false)}
+                    className={`text-sm font-medium transition-colors px-4 py-2 ${
+                      location === link.href
+                        ? 'text-accent'
+                        : 'text-foreground hover:text-accent'
+                    }`}
+                  >
+                    {link.label}
+                  </a>
+                </Link>
               ))}
               <div className="flex flex-col space-y-2 px-4 pt-4 border-t border-border">
                 <Button variant="outline" size="sm" className="gap-2 w-full">

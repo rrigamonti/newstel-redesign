@@ -79,3 +79,11 @@
 - [x] Performance optimization
 - [x] Accessibility improvements
 - [x] Cross-browser testing
+
+
+## New Requirements
+- [x] Download and use actual Newstel logo from their website
+- [x] Create separate pages for each section (not single page)
+- [x] Set up routing for multiple pages
+- [x] Ensure navigation menu is always clearly visible with better contrast
+- [x] Update navigation to link to separate pages instead of anchor links
