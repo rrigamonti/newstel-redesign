@@ -3,6 +3,7 @@ import Hero from '@/components/Hero';
 import Features from '@/components/Features';
 import VideoSection from '@/components/VideoSection';
 import ClientLogos from '@/components/ClientLogos';
+import Testimonials from '@/components/Testimonials';
 import Services from '@/components/Services';
 import Footer from '@/components/Footer';
 
@@ -14,6 +15,7 @@ export default function Home() {
       <Features />
       <VideoSection />
       <ClientLogos />
+      <Testimonials />
       <Services />
       <Footer />
     </div>
