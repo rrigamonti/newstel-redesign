@@ -138,3 +138,9 @@
 - [x] Create interactive SVG world map for Locations section
 - [x] Add location markers for all 5 offices
 - [x] Integrate map into Locations component
+
+
+## Map Improvement
+- [x] Replace current map with better quality world map
+- [x] Use accurate continent shapes
+- [x] Improve visual design and styling
