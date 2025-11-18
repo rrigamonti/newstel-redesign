@@ -150,3 +150,10 @@
 - [x] Replace map with official Newstel-Locations-2025.png
 - [x] Download value icons from original site
 - [x] Update Values component to use original icons
+
+
+## Values Section Update
+- [x] Copy high-quality circular badge icon images to project
+- [x] Update Values component to use circular badge layout matching original
+- [x] Add wavy background decoration to Values section
+- [x] Match exact styling from original site

@@ -1,69 +1,82 @@
-import { Card, CardContent } from '@/components/ui/card';
-
 const values = [
   {
     title: 'Adaptive',
     description: 'We shape ourselves around what you, the client, needs and can adapt quickly to change',
-    icon: '/value-adaptive.png',
+    icon: '/Adaptive.png',
   },
   {
     title: 'Efficient',
     description: 'Making things simple and doing things efficiently is our key to a highly motivated and productive team',
-    icon: '/value-efficient.png',
+    icon: '/Efficient.png',
   },
   {
     title: 'Team-shaped',
     description: 'We invest in our team so they have extensive opportunities for growth, training and development',
-    icon: '/value-teamshaped.png',
+    icon: '/Teamshaped.png',
   },
   {
     title: 'Customer Focused',
     description: 'We are dedicated to enhancing customer satisfaction and building strong customer relationships',
-    icon: '/value-customer-focused.png',
+    icon: '/Customer-Focused.png',
   },
 ];
 
 export default function Values() {
   return (
-    <section className="py-20 bg-background">
-      <div className="container">
+    <section className="relative py-20 bg-gray-50 overflow-hidden">
+      {/* Wavy Background Decoration */}
+      <div className="absolute inset-0 pointer-events-none">
+        <svg
+          className="absolute top-0 left-0 w-full h-32 text-gray-200"
+          viewBox="0 0 1440 120"
+          preserveAspectRatio="none"
+        >
+          <path
+            fill="currentColor"
+            d="M0,64 C240,96 480,96 720,64 C960,32 1200,32 1440,64 L1440,0 L0,0 Z"
+          />
+        </svg>
+        <svg
+          className="absolute bottom-0 left-0 w-full h-32 text-gray-200"
+          viewBox="0 0 1440 120"
+          preserveAspectRatio="none"
+        >
+          <path
+            fill="currentColor"
+            d="M0,64 C240,32 480,32 720,64 C960,96 1200,96 1440,64 L1440,120 L0,120 Z"
+          />
+        </svg>
+      </div>
+
+      <div className="container relative z-10">
         {/* Section Header */}
         <div className="text-center max-w-3xl mx-auto mb-16">
-          <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-6">
+          <h2 className="text-4xl md:text-5xl font-bold mb-6">
             Our <span className="text-gradient-coral">Values</span>
           </h2>
         </div>
 
         {/* Values Grid */}
-        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8 lg:gap-12">
           {values.map((value, index) => (
-            <Card
+            <div
               key={index}
-              className="group hover:shadow-xl transition-all duration-300 hover:-translate-y-2 border-border bg-card text-center"
+              className="flex flex-col items-center text-center group"
             >
-              <CardContent className="pt-8 pb-6 px-6">
-                {/* Icon */}
-                <div className="flex justify-center mb-6">
-                  <div className="w-32 h-32 flex items-center justify-center">
-                    <img
-                      src={value.icon}
-                      alt={value.title}
-                      className="w-full h-full object-contain transition-transform duration-300 group-hover:scale-110"
-                    />
-                  </div>
-                </div>
+              {/* Circular Badge Icon */}
+              <div className="mb-6 transition-transform duration-300 group-hover:scale-110">
+                <img
+                  src={value.icon}
+                  alt={value.title}
+                  className="w-48 h-48 md:w-56 md:h-56 object-contain"
+                />
+              </div>
 
-                {/* Title */}
-                <h3 className="text-xl font-bold text-card-foreground mb-4">
-                  {value.title}
-                </h3>
-
-                {/* Description */}
-                <p className="text-sm text-muted-foreground leading-relaxed">
-                  {value.description}
-                </p>
-              </CardContent>
-            </Card>
+              {/* Description */}
+              <p className="text-muted-foreground text-sm md:text-base leading-relaxed max-w-xs">
+                {value.description}
+              </p>
+            </div>
           ))}
         </div>
       </div>
