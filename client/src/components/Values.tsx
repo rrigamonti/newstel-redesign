@@ -1,31 +1,31 @@
-import { Sparkles, Zap, TrendingUp, Heart } from 'lucide-react';
+import { Card, CardContent } from '@/components/ui/card';
 
 const values = [
   {
-    icon: Sparkles,
-    title: 'Client-Centric Adaptability',
+    title: 'Adaptive',
     description: 'We shape ourselves around what you, the client, needs and can adapt quickly to change',
+    icon: '/value-adaptive.png',
   },
   {
-    icon: Zap,
-    title: 'Simplicity & Efficiency',
+    title: 'Efficient',
     description: 'Making things simple and doing things efficiently is our key to a highly motivated and productive team',
+    icon: '/value-efficient.png',
   },
   {
-    icon: TrendingUp,
-    title: 'Team Investment',
+    title: 'Team-shaped',
     description: 'We invest in our team so they have extensive opportunities for growth, training and development',
+    icon: '/value-teamshaped.png',
   },
   {
-    icon: Heart,
-    title: 'Customer Satisfaction',
+    title: 'Customer Focused',
     description: 'We are dedicated to enhancing customer satisfaction and building strong customer relationships',
+    icon: '/value-customer-focused.png',
   },
 ];
 
 export default function Values() {
   return (
-    <section className="py-20 bg-secondary/30">
+    <section className="py-20 bg-background">
       <div className="container">
         {/* Section Header */}
         <div className="text-center max-w-3xl mx-auto mb-16">
@@ -35,26 +35,36 @@ export default function Values() {
         </div>
 
         {/* Values Grid */}
-        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
-          {values.map((value, index) => {
-            const Icon = value.icon;
-            return (
-              <div
-                key={index}
-                className="group p-6 rounded-2xl bg-card border border-border hover:shadow-xl transition-all duration-300 hover:-translate-y-2"
-              >
-                <div className="mb-4 inline-flex items-center justify-center w-14 h-14 rounded-xl bg-primary/10 text-primary group-hover:bg-primary group-hover:text-primary-foreground transition-all duration-300">
-                  <Icon className="h-7 w-7" />
+        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+          {values.map((value, index) => (
+            <Card
+              key={index}
+              className="group hover:shadow-xl transition-all duration-300 hover:-translate-y-2 border-border bg-card text-center"
+            >
+              <CardContent className="pt-8 pb-6 px-6">
+                {/* Icon */}
+                <div className="flex justify-center mb-6">
+                  <div className="w-32 h-32 flex items-center justify-center">
+                    <img
+                      src={value.icon}
+                      alt={value.title}
+                      className="w-full h-full object-contain transition-transform duration-300 group-hover:scale-110"
+                    />
+                  </div>
                 </div>
-                <h3 className="text-lg font-bold text-card-foreground mb-3">
+
+                {/* Title */}
+                <h3 className="text-xl font-bold text-card-foreground mb-4">
                   {value.title}
                 </h3>
-                <p className="text-muted-foreground text-sm leading-relaxed">
+
+                {/* Description */}
+                <p className="text-sm text-muted-foreground leading-relaxed">
                   {value.description}
                 </p>
-              </div>
-            );
-          })}
+              </CardContent>
+            </Card>
+          ))}
         </div>
       </div>
     </section>

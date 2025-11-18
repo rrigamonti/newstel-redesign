@@ -144,3 +144,9 @@
 - [x] Replace current map with better quality world map
 - [x] Use accurate continent shapes
 - [x] Improve visual design and styling
+
+
+## Use Official Assets
+- [x] Replace map with official Newstel-Locations-2025.png
+- [x] Download value icons from original site
+- [x] Update Values component to use original icons
