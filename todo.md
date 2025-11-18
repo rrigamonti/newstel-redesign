@@ -130,3 +130,11 @@
 - [x] Add Technology section
 - [x] Add Careers section
 - [x] Ensure all original content is included
+
+
+## Original Images
+- [x] Download world map image from original site
+- [x] Download other section images/backgrounds
+- [x] Create interactive SVG world map for Locations section
+- [x] Add location markers for all 5 offices
+- [x] Integrate map into Locations component

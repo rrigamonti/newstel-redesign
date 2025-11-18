@@ -1,4 +1,5 @@
 import { MapPin, Building2, Users, Award } from 'lucide-react';
+import WorldMap from './WorldMap';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 
 const locations = [
@@ -43,8 +44,11 @@ export default function Locations() {
   return (
     <section className="py-20 bg-background">
       <div className="container">
+        {/* World Map */}
+        <WorldMap />
+
         {/* Section Header */}
-        <div className="text-center max-w-3xl mx-auto mb-16">
+        <div className="text-center max-w-3xl mx-auto mb-16 mt-16">
           <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-6">
             Our <span className="text-gradient-coral">Locations</span>
           </h2>
