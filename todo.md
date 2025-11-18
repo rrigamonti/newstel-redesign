@@ -157,3 +157,8 @@
 - [x] Update Values component to use circular badge layout matching original
 - [x] Add wavy background decoration to Values section
 - [x] Match exact styling from original site
+
+
+## Netlify Deployment Fix
+- [x] Add _redirects file to fix SPA routing on Netlify
+- [x] Add netlify.toml configuration file
