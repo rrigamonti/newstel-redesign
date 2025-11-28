@@ -8,7 +8,7 @@ export default function CaseStudies() {
     {
       title: "Wolfson Brands",
       description: "How we helped Wolfson Brands significantly increase customer lifetime value through proactive customer support optimization.",
-      image: "/clients/client-wolfson.webp",
+      image: "/clients/wolfson.png",
       results: [
         "Increased customer lifetime value",
         "Optimized support operations",
@@ -18,7 +18,7 @@ export default function CaseStudies() {
     {
       title: "Chilly's Bottles",
       description: "Building a united remote team that feels like one cohesive unit, joining weekly huddles and suggesting new tactics to improve business.",
-      image: "/clients/client-bloomandwild.webp",
+      image: "/case-studies/Chilly-s-logo-_-Brands-cover.jpg.webp",
       results: [
         "Seamless team integration",
         "Proactive business improvement",
@@ -28,7 +28,7 @@ export default function CaseStudies() {
     {
       title: "OnBuy.com",
       description: "Creating substantial improvements to Zendesk workflows through process optimization, queue management, and automation.",
-      image: "/clients/client-onbuy.webp",
+      image: "/case-studies/image_processing20240923-2-dtv0hw.png",
       results: [
         "Improved Zendesk workflows",
         "Enhanced efficiency",

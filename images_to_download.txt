@@ -1,0 +1,42 @@
+Images from newstel.com homepage:
+
+Feature Icons:
+- Circle-Image-1-1024x1024.png (Low cost icon)
+- Circle-Image-2-1024x1024.png (Rapid scaling icon)
+- Asset-2.svg (appears to be a feature icon)
+
+Service/Technology Platform Logos:
+- freshdesk.jpg
+- hootsuite.jpg
+- jira.jpg
+- learnupon.jpg
+- magento.jpg
+- outcomes.jpg
+- puzzel.jpg
+- salesforce.jpg
+- shopify.jpg
+- trustpilot.jpg
+- woocommerce.jpg
+- yotpo.jpg
+- zendesk.jpg
+- evalugent.jpg
+
+Case Study Images:
+- 1712106619932.jpeg
+- AH5LGgjffUrSdaSaqKpRJM1mInMBU5Ux-scaled.png
+- Chilly-s-logo-_-Brands-cover.jpg.webp
+- image_processing20240923-2-dtv0hw.png
+
+Other Icons:
+- 1.png, 2.png, 3.png, 4.png (from 2024/05 - likely feature icons)
+- Untitled-3.jpg
+- Untitled-design-1.png
+
+Already downloaded:
+- Logo.svg ✓
+- Adaptive.png ✓
+- Customer-Focused.png ✓
+- Efficient.png ✓
+- Teamshaped.png ✓
+- Newstel-Locations-2025.png ✓
+- Client logos (coway, bmw, urban, nordic, wolfson, onbuy, learnerbly, Fanfuel) ✓

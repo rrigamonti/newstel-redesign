@@ -4,26 +4,17 @@ import { CheckCircle } from "lucide-react";
 
 export default function Technology() {
   const technologies = [
-    {
-      category: "Helpdesk",
-      logo: "https://theme.zdassets.com/theme_assets/643007/6b48d35dbe3a6b7e1c336c88a87e1db5b4e1b0f5.svg",
-      name: "Zendesk"
-    },
-    {
-      category: "Social & Reviews",
-      logo: "https://www.yotpo.com/wp-content/uploads/2023/01/yotpo-logo.svg",
-      name: "Yotpo"
-    },
-    {
-      category: "Ecommerce",
-      logo: "https://cdn.shopify.com/shopifycloud/brochure/assets/brand-assets/shopify-logo-primary-logo-456baa801ee66a0a435671082365958316831c9960c480451dd0330bcdae304f.svg",
-      name: "Shopify"
-    },
-    {
-      category: "Training & Technology",
-      logo: "https://www.learnupon.com/wp-content/themes/learnupon/dist/images/logo.svg",
-      name: "LearnUpon"
-    }
+    { category: "Helpdesk", logo: "/tech/zendesk.jpg", name: "Zendesk" },
+    { category: "Helpdesk", logo: "/tech/freshdesk.jpg", name: "Freshdesk" },
+    { category: "CRM", logo: "/tech/salesforce.jpg", name: "Salesforce" },
+    { category: "Ecommerce", logo: "/tech/shopify.jpg", name: "Shopify" },
+    { category: "Ecommerce", logo: "/tech/magento.jpg", name: "Magento" },
+    { category: "Ecommerce", logo: "/tech/woocommerce.jpg", name: "WooCommerce" },
+    { category: "Reviews", logo: "/tech/trustpilot.jpg", name: "Trustpilot" },
+    { category: "Reviews", logo: "/tech/yotpo.jpg", name: "Yotpo" },
+    { category: "Project Management", logo: "/tech/jira.jpg", name: "Jira" },
+    { category: "Social Media", logo: "/tech/hootsuite.jpg", name: "Hootsuite" },
+    { category: "Contact Center", logo: "/tech/puzzel.jpg", name: "Puzzel" },
   ];
 
   const services = [
