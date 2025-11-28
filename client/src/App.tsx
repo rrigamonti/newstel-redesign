@@ -5,21 +5,25 @@ import { Route, Switch } from "wouter";
 import ErrorBoundary from "./components/ErrorBoundary";
 import { ThemeProvider } from "./contexts/ThemeContext";
 import Home from "./pages/Home";
-import ServicesPage from "./pages/Services";
-import AboutPage from "./pages/About";
-import TechnologyPage from "./pages/Technology";
-import CareersPage from "./pages/Careers";
-import ContactPage from "./pages/Contact";
+import WhyUs from "./pages/WhyUs";
+import Services from "./pages/Services";
+import About from "./pages/About";
+import Technology from "./pages/Technology";
+import CaseStudies from "./pages/CaseStudies";
+import Careers from "./pages/Careers";
+import Contact from "./pages/Contact";
 
 function Router() {
   return (
     <Switch>
       <Route path={"/"} component={Home} />
-      <Route path="/services" component={ServicesPage} />
-      <Route path="/about" component={AboutPage} />
-      <Route path="/technology" component={TechnologyPage} />
-      <Route path="/careers" component={CareersPage} />
-      <Route path="/contact" component={ContactPage} />
+      <Route path={"/why-us"} component={WhyUs} />
+      <Route path={"/services"} component={Services} />
+      <Route path={"/about"} component={About} />
+      <Route path={"/technology"} component={Technology} />
+      <Route path={"/case-studies"} component={CaseStudies} />
+      <Route path={"/careers"} component={Careers} />
+      <Route path={"/contact"} component={Contact} />
       <Route path={"/404"} component={NotFound} />
       {/* Final fallback route */}
       <Route component={NotFound} />

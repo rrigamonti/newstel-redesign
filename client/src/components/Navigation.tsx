@@ -19,9 +19,11 @@ export default function Navigation() {
 
   const navLinks = [
     { label: 'Home', href: '/' },
+    { label: 'Why Choose Us?', href: '/why-us' },
     { label: 'Our Services', href: '/services' },
     { label: 'Technology', href: '/technology' },
     { label: 'About Us', href: '/about' },
+    { label: 'Case Studies', href: '/case-studies' },
     { label: 'Careers', href: '/careers' },
     { label: 'Contact', href: '/contact' },
   ];
