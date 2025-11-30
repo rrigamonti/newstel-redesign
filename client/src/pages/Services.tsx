@@ -1,5 +1,6 @@
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
+import PageHero from "@/components/PageHero";
 import { Button } from "@/components/ui/button";
 import { Phone, Users, CheckCircle } from "lucide-react";
 
@@ -85,15 +86,10 @@ export default function Services() {
     <div className="min-h-screen flex flex-col">
       <Navigation />
       
-      {/* Hero Section */}
-      <section className="bg-[#2C3E50] text-white pt-32 pb-16">
-        <div className="container mx-auto px-4">
-          <h1 className="text-5xl md:text-6xl font-bold mb-6">Our Services</h1>
-          <p className="text-xl md:text-2xl text-gray-200 max-w-4xl">
-            Multilingual customer service that feels in-house, not outsourced
-          </p>
-        </div>
-      </section>
+      <PageHero 
+        title="Our Services"
+        subtitle="Multilingual customer service that feels in-house, not outsourced"
+      />
 
       {/* Intro Section */}
       <section className="py-16 bg-white">

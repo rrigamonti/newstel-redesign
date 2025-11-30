@@ -1,5 +1,6 @@
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
+import PageHero from "@/components/PageHero";
 import { CheckCircle } from "lucide-react";
 
 export default function Technology() {
@@ -29,21 +30,16 @@ export default function Technology() {
     <div className="min-h-screen flex flex-col">
       <Navigation />
       
-      {/* Hero Section */}
-      <section className="bg-[#2C3E50] text-white pt-32 pb-16">
-        <div className="container mx-auto px-4">
-          <h1 className="text-5xl md:text-6xl font-bold mb-6">Technology</h1>
-          <p className="text-xl md:text-2xl text-gray-200 max-w-4xl">
-            Seamless integration with your existing systems
-          </p>
-        </div>
-      </section>
+      <PageHero 
+        title="Technology"
+        subtitle="We use technology to seamlessly support our global team, allowing us to optimise the customer service experience and pass the benefits on to you and your customers."
+      />
 
       {/* Intro Section */}
       <section className="py-16 bg-white">
         <div className="container mx-auto px-4">
           <p className="text-xl text-center text-gray-700 max-w-4xl mx-auto leading-relaxed">
-            We use technology to seamlessly support our global team, allowing us to optimise the customer service experience and pass the benefits on to you and your customers. Drawing on years of experience in customer support systems, we offer clients seamless integration using in-place solutions, or we can help you select and deploy new tools.
+            Drawing on years of experience in customer support systems, we offer clients seamless integration using in-place solutions, or we can help you select and deploy new tools.
           </p>
         </div>
       </section>

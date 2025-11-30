@@ -1,5 +1,6 @@
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
+import PageHero from "@/components/PageHero";
 import { Button } from "@/components/ui/button";
 import { ArrowRight } from "lucide-react";
 
@@ -41,15 +42,10 @@ export default function CaseStudies() {
     <div className="min-h-screen flex flex-col">
       <Navigation />
       
-      {/* Hero Section */}
-      <section className="bg-[#2C3E50] text-white pt-32 pb-16">
-        <div className="container mx-auto px-4">
-          <h1 className="text-5xl md:text-6xl font-bold mb-6">Case Studies</h1>
-          <p className="text-xl md:text-2xl text-gray-200 max-w-4xl">
-            Real results from real partnerships
-          </p>
-        </div>
-      </section>
+      <PageHero 
+        title="Case Studies"
+        subtitle="Real results from real partnerships"
+      />
 
       {/* Case Studies Grid */}
       <section className="py-20 bg-white">
